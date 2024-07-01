@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  display: grid;
+  grid-row: 20vh 20vh 1fr;
+  grid-template-areas: "header" "inputs" "activities";
+  font-size: 16px;
+  background-color: #f3f3f3;
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+main {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 5vh;
+}
+#activities {
+  grid-area: activities;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#button {
+  background-color: green;
+  color: white;
+  height: 4vh;
+  border-radius: 0.3rem;
+}
+.btnDelete {
+  border: none;
+}
+.btnDelete:hover {
+  opacity: 40%;
+}
+#header {
+  grid-area: header;
+}
+#inputs {
+  grid-area: inputs;
+  margin-bottom: 1vh;
+}
+#inputs p {
+  margin-bottom: 0.5vh;
+}
+#inputText {
+  width: 73vw;
+  height: 4vh;
+}
+#task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-left span {
+  padding-right: 2vw;
+  font-size: 1rem;
+}
+#taskItems {
+  width: 38vw;
+  padding-left: 0px;
+}
+#taskMenu {
+  margin-top: 5vh;
+
+  width: 1fr;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 6.5rem;
+}
+#totales {
+  width: 20vw;
+  padding-left: 0px;
+}
